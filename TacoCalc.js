@@ -20,7 +20,7 @@ if (Meteor.isClient) {
                 data +="<li> " +  Math.ceil(0.25*numPeople) + " agurker</li>";
                 data += "<li> " + Math.ceil((1/8)*numPeople) +" pakker Isbergsalat</li>"; 
                 data += "<li> " + Math.ceil(100*numPeople) + " gram mais</li>"; 
-                data +="<li> " +  Math.ceil((1/8)*numPeople) + " paprkia</li>";
+                data +="<li> " +  Math.ceil((1/8)*numPeople) + " paprika</li>";
                 data += "<li> " + Math.ceil((1/6) *numPeople )+ " bokser rømme </li>";
                 data += "<li> " + Math.ceil((1/6)*numPeople )+ " rødløk</li>";
                 data +="<li> " +  Math.ceil((1/8)*numPeople) + " store poser med tortillachips</li>";
