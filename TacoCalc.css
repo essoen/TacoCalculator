@@ -1,0 +1,17 @@
+/* CSS declarations go here */
+#footer {
+	text-align: center; 
+	font-size: 10px;
+	color: grey;
+	position:relative;
+	bottom: -50px;
+}
+
+.aligncenter{
+	float: center;
+	text-align: center;
+}
+
+.alignright{
+	float: right;
+}

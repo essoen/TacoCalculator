@@ -1,0 +1,54 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 	<title>Tacokalkulator</title>
+</head>
+<body>
+	<div class="container">
+			<div class="page-header">
+				<h1>readmes tacokalkulator</h1>
+			</div>
+		<p class="lead center">
+			For nye medlemmer, gamle drankere og andre som ønsker å kokkelere readmes fantastiske taco men er usikker på hvor mye de trenger.
+		</p>
+		<div class="row-fluid">
+			<div class="span6">
+				{{> calc}}
+			</div>
+		
+			<div class="span6">
+				<h4>.. også trenger man guacamole</h4>
+				Per 8 personer
+				<li>4 stk. modne avocado
+				<li>4 fedd hvitløk
+				<li>2 dl løk
+				<li>4 ss chili
+				<li>4 ss fersk koriander type hakket
+				<li>6 ss limesaft
+				<li>1 ts salt
+				<li>1 ts pepper
+				<li>4 ss rømme>
+			</div>
+		</div>
+		<div id="footer" >
+			<p>Powered by <a href="http://meteor.com">Meteor</a>
+			and made by <a href="mailto:steinotto.svorstol@gmail.com">Stein-Otto Svorstøl</a></p>
+		</div>
+	</div>
+</body>
+<template name="calc">
+<br><br>
+	<form role="form">
+	<label><b>Antall deltakere: </b></label><input type="text" value="1" class="form-control" id="numPeople"/></form> 
+	<b> Ferdig rundet av, men lurt å ikke plukke på autopilot..</b>
+	{{{ingridients}}}
+	<br><br>
+	Ellers er det nødvendig med ..
+	<li>gulost, omkring 0.5 kg per 16 person? 
+	<li>fetaost i olje 
+	<li>chunky salsa (hot ofc og litt medium for de som liker det) <br>
+	<li>cashewnøtter 
+	<li>jalapenos </li>
+	... også en enkelt boks ananas til Marit.
+</template>
