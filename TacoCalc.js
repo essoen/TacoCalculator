@@ -28,8 +28,9 @@ if (Meteor.isClient) {
         }
 
         Template.calc.events({
-                'change #numPeople' : function(event, template) {
+                'keyup #numPeople' : function(event, template) {
                         Session.set("numberOfPeople", template.find("#numPeople").value);
+                        return false;  // So it doesn't reload
         }
         })
 }
