@@ -1,17 +1,14 @@
 if (Meteor.isClient) {
-        Session.set("numberOfPeople", 1); 
-        Handlebars.registerHelper('breaklines', function(descriptionFunction) {
-                    text = descriptionFunction();
-                    text = Handlebars.Utils.escapeExpression(text);
-                    text = text.toString();
-                    text = text.replace(/(\r\n|\n|\r)/gm, '<br>');
-                    return new Handlebars.SafeString(text);
-        });
+        Session.set("numberOfPeople", 9001);
 
         Template.calc.ingridients = function() {
                 var numPeople = Session.get("numberOfPeople");
                 if (!numPeople)
                         return "<br>Du har ikke oppgitt antall personer ennå."; 
+                if (numPeople < 0)
+                    return "Hva er det du tror du gjør? Slutt å være så negativ. ";
+                if( isNaN(numPeople))
+                    return "Vennligst bruk tall a, kis."; 
                 var data = "<li>"+ Math.ceil(200*numPeople) + " gram kjøttdeig</li>";
                 data += "<li> " + Math.ceil(2.5*numPeople) + " STORE tacolefser</li>";
                 data += "<li> " + Math.ceil(0.5*numPeople) + " pakker tacokrydder</li>";
