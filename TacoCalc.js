@@ -4,11 +4,11 @@ if (Meteor.isClient) {
         Template.calc.ingridients = function() {
                 var numPeople = Session.get("numberOfPeople");
                 if (!numPeople)
-                        return "<br>Du har ikke oppgitt antall personer ennå."; 
+                        return "<h4>Du har ikke oppgitt antall personer ennå.</h4>"; 
                 if (numPeople < 0)
-                    return "Hva er det du tror du gjør? Slutt å være så negativ. ";
+                    return "<h4>Hva er det du tror du gjør? Slutt å være så negativ. </h4>";
                 if( isNaN(numPeople))
-                    return "Vennligst bruk tall a, kis."; 
+                    return "<h4>Vennligst bruk tall a, kis.</h4>"; 
                 var data = "<li>"+ Math.ceil(200*numPeople) + " gram kjøttdeig</li>";
                 data += "<li> " + Math.ceil(2.5*numPeople) + " STORE tacolefser</li>";
                 data += "<li> " + Math.ceil(0.5*numPeople) + " pakker tacokrydder</li>";
@@ -21,18 +21,19 @@ if (Meteor.isClient) {
                 data += "<li> " + Math.ceil((1/6) *numPeople )+ " bokser rømme </li>";
                 data += "<li> " + Math.ceil((1/6)*numPeople )+ " rødløk</li>";
                 data +="<li> " +  Math.ceil((1/8)*numPeople) + " store poser med tortillachips</li>";
+                data += "<h5>Hvis du er i tvil, ta med ekstra.</h5>"; 
                 return data; 
         }
 
         Template.calc.events({
                 'keyup #numPeople' : function(event, template) {
-                        Session.set("numberOfPeople", template.find("#numPeople").value);
-                        return false;  // So it doesn't reload
-        }
+                        Session.set("numberOfPeople", template.find("#numPeople").value); // Gets value and updates data
+                }
         })
 }
 
 if (Meteor.isServer) {
-  Meteor.startup(function () {
-  });
+          Meteor.startup(function () {
+                // Nothing to do.
+        });
 }
