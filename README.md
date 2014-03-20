@@ -6,4 +6,5 @@ For bruk internt i Abakus linjeforenings avis readme for å finne ut hvor mye vi
 Utviklet i Meteor/Node.js.
 
 ## Installasjon
-Klon repository, og kjør kommandoen `meteor` 
+Klon repository og kjør kommandoen `meteor` (for now)
+Bundling kommer.
