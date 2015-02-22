@@ -11,6 +11,7 @@ if (Meteor.isClient) {
                     return "<h4>Vennligst bruk tall a, kis.</h4>"; 
                 var data = "<li>"+ Math.ceil(200*numPeople) + " gram kjøttdeig</li>";
                 data += "<li> " + Math.ceil(2.5*numPeople) + " STORE tacolefser</li>";
+                data += "<li> " + Math.ceil(0.5*(numPeople/10)) + " kg ost</li>"; // 0.5 kg per 10 pers 
                 data += "<li> " + Math.ceil(0.5*numPeople) + " pakker tacokrydder</li>";
                 data += "<li> " + Math.ceil(0.25*numPeople) + " pakker bacon</li>";
                 data += "<li> " + Math.ceil(0.25*numPeople )+ " tomater</li>";
