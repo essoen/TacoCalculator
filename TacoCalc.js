@@ -14,7 +14,7 @@ if (Meteor.isClient) {
                 data += "<li> " + Math.ceil(0.5*numPeople) + " pakker tacokrydder</li>";
                 data += "<li> " + Math.ceil(0.25*numPeople) + " pakker bacon</li>";
                 data += "<li> " + Math.ceil(0.4*numPeople )+ " tomater</li>";
-                data +="<li> " +  Math.ceil((1/8)*numPeople) + " agurker</li>";
+                data +="<li> " +  Math.ceil((1/15)*numPeople) + " agurker</li>";
                 data += "<li> " + Math.ceil((1/12)*numPeople) +" pakker isbergsalat</li>"; 
                 data += "<li> " + Math.ceil(25*numPeople) + " gram mais</li>"; 
                 data +="<li> " +  Math.ceil((1/12)*numPeople) + " paprika</li>";
