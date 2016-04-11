@@ -1,0 +1,11 @@
+dashboard:
+  image: essoen/tacocalc
+  ports:
+   - "80:80"
+  links:
+   - mongo
+  environment:
+   - MONGO_URL=mongodb://mongo/tacocalc
+   - ROOT_URL=http://taco.svorstol.com
+mongo:
+  image: mongo:latest
