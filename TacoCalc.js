@@ -7,8 +7,6 @@ if (Meteor.isClient) {
                 return "<h4>Du har ikke oppgitt antall personer ennå.</h4>";
         if (numPeople < 0)
             return "<h4>Hva er det du tror du gjør? Slutt å være så negativ. </h4>";
-        if( isNaN(numPeople))
-            return "<h4>Vennligst bruk tall a, kis.</h4>";
         var data = "<li>"+ Math.ceil(150*numPeople) + " gram kjøttdeig</li>";
         data += "<li> " + Math.ceil(2.5*numPeople) + " STORE tacolefser</li>";
         data += "<li> " + Math.ceil(0.5*numPeople) + " pakker tacokrydder</li>";
