@@ -21,7 +21,7 @@
 			<div class="span6">
 				{{> calc}}
 			</div>
-		
+
 			<div class="span6">
 				<h5>.. også trenger man guacamole</h5>
 				Per 8 personer
@@ -45,7 +45,8 @@
 
 
 <template name="calc">
-	<label><h5>Skriv inn antall deltakere: </h5></label><input type="text" value="9001" class="form-control" id="numPeople"/>
+	<label><h5>Skriv inn antall deltakere: </h5></label>
+	<input type="number" min="1" value="9001" class="form-control" id="numPeople"/>
 	{{{ingridients}}}
 	<br>
 	<h5>Ellers er det nødvendig med ..</h5>
