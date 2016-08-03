@@ -7,7 +7,7 @@ if (Meteor.isClient) {
                 return "<h4>Du har ikke oppgitt antall personer ennå.</h4>";
         if (numPeople < 0)
             return "<h4>Hva er det du tror du gjør? Slutt å være så negativ. </h4>";
-        var data = "<li>"+ Math.ceil(150*numPeople) + " gram kjøttdeig</li>";
+        var data = "<li>"+ Math.ceil(150*numPeople/400) + " pakker kjøttdeig (á 400 gram)</li>";
         data += "<li> " + Math.ceil(2.5*numPeople) + " STORE tacolefser</li>";
         data += "<li> " + Math.ceil(0.5*numPeople) + " pakker tacokrydder</li>";
         data += "<li> " + Math.ceil(0.25*numPeople) + " pakker bacon</li>";

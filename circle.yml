@@ -1,0 +1,19 @@
+## circle.yml
+machine:
+    node:
+        version: 6.2.2
+    environment:
+        NODE_ENV: test
+    services:
+        - docker
+
+dependencies:
+  cache_directories:
+    - ~/.meteor
+  override:
+    - meteor || curl https://install.meteor.com | /bin/sh
+    - meteor npm install
+
+deployment:
+    production:
+        branch: master
