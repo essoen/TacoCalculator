@@ -1,4 +1,5 @@
 #  TacoCalculator
+> Now rewritten to Vue (because why run a server and database when everything is done on the client side?) - check it out [here](http://github.com/essoen/tacocalc)
 
 http://taco.svorstol.com
 
